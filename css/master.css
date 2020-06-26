@@ -1,17 +1,16 @@
 body{
   font-family: 'Inter', sans-serif;
-
-
 }
-main{
-  position: absolute;
-}
+
 .main {
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   background-image: url("/images/pattern-bg.svg");
   background-repeat: no-repeat;
-  background-position: 90% 48%;
+  background-position:90% 48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-group {
@@ -59,32 +58,35 @@ main{
   background: #fff;
   display: flex;
   align-items: center;
-  justify-content: center;
-}
+  justify-content: center
 
-.btn img {
-  height: 20px;
+}
+.btn a{
+  text-decoration: none;
+}
+.btn i{
+  color:#bdc3c7;
+  font-size: 20px;
+  padding: 20px;
+}
+.btn i:hover{
+  color:#fff;
+}
+.btn:hover{
+  background:#8869D3;
+  color:#fff;
 }
 
 .btn-left {
   border-radius: 50% 0 0 50%;
 }
-
 .btn-right {
   border-radius: 0 50% 50% 0;
 }
-.slide-in{
-  animation: slide-in 0.5 ease forwards;
-}
-@keyframes slide-in {
-  from{
-    transform: translateX(100%);
-    visibility: visible;
-  }
-  to{
-    transform: translateX(0%);
-  }
-}
+
+
+
+
 
 @media (max-width:768px) {
   .text-group {
