@@ -1,15 +1,15 @@
-body, html {
+body{
   font-family: 'Inter', sans-serif;
   overflow: hidden;
-  background-image: url("/images/pattern-bg.svg");
-  background-repeat: no-repeat;
-  background-position: 90% 48%;
+
 }
 
 .main {
   min-height: 100vh;
   width: 100%;
-
+  background-image: url("/images/pattern-bg.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 48%;
 }
 
 .text-group {
@@ -71,35 +71,18 @@ body, html {
 .btn-right {
   border-radius: 0 50% 50% 0;
 }
-/* por si las dudas */
-.[name]-leave {}
-.[name]-leave-active {}
-.[name]-leave-to {}
-.[name]-enter {}
-.[name]-enter-active {}
-.[name]-enter-to {}
-/* Slide left / right */
-.slide-left--leave-active,
-.slide-left--enter-active,
-.slide-right--leave-active,
-.slide-right--enter-active {
-  transition: transform 250ms cubic-bezier(0.4, 0.0, 0.2, 1);
+.slide-in{
+  animation: slide-in 0.5 ease forwards;
 }
-.slide-left--leave,
-.slide-left--enter-to,
-.slide-right--leave,
-.slide-right--enter-to {
-  transform: translateX(0);
+@keyframes slide-in {
+  from{
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  to{
+    transform: translateX(0%);
+  }
 }
-.slide-left--enter,
-.slide-right--leave-to {
-  transform: translateX(-100%);
-}
-.slide-left--leave-to,
-.slide-right--enter {
-  transform: translateX(100%);
-}
-
 
 @media (max-width:768px) {
   .text-group {
