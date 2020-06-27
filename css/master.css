@@ -26,10 +26,12 @@ body {
   font-size: 32px;
   font-weight: 300;
 }
-.text-2{
+
+.text-2 {
   display: flex;
   flex-direction: row;
 }
+
 .text-2 p {
   font-size: 20px;
   color: hsl(240, 18%, 77%);
@@ -54,7 +56,6 @@ body {
   position: absolute;
   bottom: -28px;
   left: 75px;
-
 }
 
 .btn {
@@ -74,7 +75,6 @@ body {
   color: #bdc3c7;
   font-size: 20px;
   padding: 20px;
-
 }
 
 .btn i:hover {
@@ -94,33 +94,26 @@ body {
   border-radius: 0 50% 50% 0;
 }
 
+#john {
+  display: none;
 }
-.john{
 
-top:5rem;
-bottom: 0;
-left: 0;
-right: 0;
-margin:auto;
-transform: translateX();
-
-}
 @media (max-width:768px) {
-body{
+  body {}
 
-}
   .main {
-    padding:60px 35px;
+    padding: 60px 35px;
     text-align: center;
     background-image: url("/images/pattern-bg.svg");
     background-repeat: no-repeat;
-    background-position:50% 5%;
+    background-position: 50% 5%;
     background-size: 90%;
-
   }
-  .img-container{
+
+  .img-container {
     margin-bottom: 4rem;
   }
+
   .text-group {
     width: 100%;
     height: 420px;
@@ -128,28 +121,30 @@ body{
     background-repeat: no-repeat;
     background-position: 50% 0%;
     background-size: 20%;
-
   }
+
   .text p {
     font-size: 20px;
     font-weight: 500;
   }
-  .text-2{
+
+  .text-2 {
     display: flex;
     flex-direction: column;
     flex
   }
-  .text-2 p {
 
+  .text-2 p {
     font-size: 18px;
     color: hsl(240, 18%, 77%);
   }
+
   .text-2 b {
     font-size: 20px;
-
   }
+
   .selector {
-  width: 112px;
+    width: 112px;
     position: absolute;
     left: 0;
     right: 0;
@@ -157,5 +152,4 @@ body{
     bottom: -28px;
     transform: scale(0.8);
   }
-
 }
