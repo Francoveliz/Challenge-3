@@ -54,6 +54,7 @@ body {
   position: absolute;
   bottom: -28px;
   left: 75px;
+
 }
 
 .btn {
@@ -73,6 +74,7 @@ body {
   color: #bdc3c7;
   font-size: 20px;
   padding: 20px;
+
 }
 
 .btn i:hover {
@@ -92,6 +94,17 @@ body {
   border-radius: 0 50% 50% 0;
 }
 
+}
+.john{
+
+top:5rem;
+bottom: 0;
+left: 0;
+right: 0;
+margin:auto;
+transform: translateX();
+
+}
 @media (max-width:768px) {
 body{
 
